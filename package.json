@@ -1,10 +1,11 @@
 {
   "name": "electron-react-typescript-tailwind-starter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Ready-to-use project template for building cross-platform desktop applications with Electron, React, TypeScript, and Tailwind CSS.",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
+    "dev": "nodemon --watch src/electron --ext ts --exec \"npm run start\"",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -12,10 +13,9 @@
   },
   "keywords": [],
   "author": {
-    "name": "Rostislav Jadavan",
-    "email": "rostislav@jadavan.com"
+    "name": "Soufiane Oukattou",
+    "email": "souf.11.yane@gamil.com"
   },
-  "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.2.1",
     "@electron-forge/maker-deb": "^6.2.1",
@@ -23,8 +23,8 @@
     "@electron-forge/maker-squirrel": "^6.2.1",
     "@electron-forge/maker-zip": "^6.2.1",
     "@electron-forge/plugin-webpack": "^6.2.1",
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
@@ -34,11 +34,12 @@
     "eslint-plugin-import": "^2.27.5",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
     "node-loader": "^2.0.0",
+    "nodemon": "^3.0.3",
     "postcss-loader": "^7.3.3",
     "style-loader": "^3.3.3",
     "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
-    "typescript": "~5.1.6"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
@@ -46,6 +47,6 @@
     "postcss": "8.4.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "^3.4.1"
   }
 }

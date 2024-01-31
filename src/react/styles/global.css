@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* this is a fix for making inputs shrink until 0px  */
+*,
+*::after,
+*::before {
+  min-width: 0;
+}
